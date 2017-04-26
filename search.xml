@@ -24,6 +24,16 @@
 <h4 id="11、其它"><a href="#11、其它" class="headerlink" title="11、其它"></a>11、其它</h4><p>每次部署的步骤，可按以下三步来进行.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
 <p>常用命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;postName&quot; #新建文章</div><div class="line">hexo new page &quot;pageName&quot; #新建页面</div><div class="line">hexo generate #生成静态页面至public目录</div><div class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</div><div class="line">hexo deploy #将.deploy目录部署到GitHub</div><div class="line">hexo help  # 查看帮助</div><div class="line">hexo version  #查看Hexo的版本</div></pre></td></tr></table></figure></p>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -35,6 +45,18 @@
 <h3 id="4、pages服务方式部署"><a href="#4、pages服务方式部署" class="headerlink" title="4、pages服务方式部署"></a>4、pages服务方式部署</h3><p>直接上图:<br><img src="/uploads/CodingPages服务配置.jpg" alt="CodingPages服务配置"></p>
 <h3 id="5、域名DNS解析配置"><a href="#5、域名DNS解析配置" class="headerlink" title="5、域名DNS解析配置"></a>5、域名DNS解析配置</h3><p>直接上图:<br><img src="/uploads/域名DNS解析配置.jpg" alt="域名DNS解析配置"></p>
 ]]></content>
+      
+        
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> github </tag>
+            
+            <tag> coding </tag>
+            
+        </tags>
+        
     </entry>
     
   
