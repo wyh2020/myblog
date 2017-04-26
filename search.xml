@@ -4,19 +4,14 @@
   
     
     <entry>
-      <title><![CDATA[nextjs-lesson1-1]]></title>
-      <url>http://wyh2020.com/2017/04/26/nextjs-lesson1-1/</url>
-      <content type="html"><![CDATA[<p><a href="https://learnnextjs.com/basics/getting-started/setup" target="_blank" rel="external">原文地址</a></p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>Next.js同时支持Windows、Mac、Linux，只要在你系统上安装Node.js就可以创建Next.js应用。</p>
-<p>此外，你还需要一个文本编辑器写代码和一个终端应用程序调用一些命令。</p>
-<p>如果你是Windows，尝试用PowerShell。Next.js 在任何命令解析器或终端都能工作，但我们将在本指南中使用的一些UNIX特定命令。我们建议使用PowerShell。通过运行下列命令来开始创建实例项目：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">mkdir hello-next</div><div class="line">cd hello-next</div><div class="line">npm init -y</div><div class="line">npm install --save react react-dom next</div><div class="line">mkdir pages</div></pre></td></tr></table></figure>
-<p>然后打开 helle-next 根目录下的”package.json”文件 添加如下npm脚本：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;scripts&quot;: &#123;</div><div class="line">    &quot;dev&quot;: &quot;next&quot;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>现在一切都准备好了。运行以下命令，启动开发服务器：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm run dev</div></pre></td></tr></table></figure></p>
-<p>然后在你的浏览器打开<a href="http://localhost:3000" target="_blank" rel="external">http://localhost:3000</a></p>
-<p>你在屏幕上看到的输出是什么？</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">✦Error No Page Found</div><div class="line">✓404 - This page could not be found</div><div class="line">✦Hello Next.js</div><div class="line">✦Hello World</div></pre></td></tr></table></figure>
+      <title><![CDATA[nextjs-lesson2-0]]></title>
+      <url>http://wyh2020.com/2017/04/26/nextjs-lesson2-0/</url>
+      <content type="html"><![CDATA[<p><a href="https://learnnextjs.com/basics/navigate-between-pages" target="_blank" rel="external">原文地址</a></p>
+<h3 id="页面导航"><a href="#页面导航" class="headerlink" title="页面导航"></a>页面导航</h3><p>Now we know how to create a simple Next.js app and run it. Our simple app only had a single page, but we can add as many pages as we want. For example, we can create an “About” page by adding the following content to pages/about.js:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">export default () =&gt; (</div><div class="line">  &lt;div&gt;</div><div class="line">    &lt;p&gt;This is the about page&lt;/p&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">)</div></pre></td></tr></table></figure></p>
+<p>Then we can access that page with <a href="http://localhost:3000/about" target="_blank" rel="external">http://localhost:3000/about</a>.</p>
+<p>After that, we need to connect these pages. We could use an HTML “a” tag for that. However, it won’t perform client-side navigation; it navigates to the page via the server, which is not what we want.</p>
+<p>In order to support client-side navigation, we need to use Next.js’s Link API, which is exported via next/link.</p>
+<p>Let’s see how to use it.</p>
 ]]></content>
       
         
@@ -25,7 +20,7 @@
     <entry>
       <title><![CDATA[nextjs-lesson1-0]]></title>
       <url>http://wyh2020.com/2017/04/26/nextjs-lesson1-0/</url>
-      <content type="html"><![CDATA[<p><a href="https://learnnextjs.com/basics/getting-started" target="_blank" rel="external">原文地址</a></p>
+      <content type="html"><![CDATA[<h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><p><a href="https://learnnextjs.com/basics/getting-started" target="_blank" rel="external">原文地址</a></p>
 <p>众所周知，现在创建单页面JavaScript应用程序是非常具有挑战性的。幸运的是，有一些项目可以使构建应用程序简单化快速化。    </p>
 <p><a href="https://github.com/facebookincubator/create-react-app" target="_blank" rel="external">Create React App</a> 就是一个很好栗子。</p>
 <p>即使如此，在你创建恰当的应用之前还会有一个很高的学习曲线。原因在于你要了解客户端路由、页面布局等。如果用服务端渲染来加快页面加载则会更困难。</p>
