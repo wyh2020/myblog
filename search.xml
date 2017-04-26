@@ -4,6 +4,71 @@
   
     
     <entry>
+      <title><![CDATA[nextjs-lesson1-1]]></title>
+      <url>http://wyh2020.com/2017/04/26/nextjs-lesson1-1/</url>
+      <content type="html"><![CDATA[<p><a href="https://learnnextjs.com/basics/getting-started/setup" target="_blank" rel="external">原文地址</a></p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>Next.js同时支持Windows、Mac、Linux，只要在你系统上安装Node.js就可以创建Next.js应用。</p>
+<p>此外，你还需要一个文本编辑器写代码和一个终端应用程序调用一些命令。</p>
+<p>如果你是Windows，尝试用PowerShell。Next.js 在任何命令解析器或终端都能工作，但我们将在本指南中使用的一些UNIX特定命令。我们建议使用PowerShell。通过运行下列命令来开始创建实例项目：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">mkdir hello-next</div><div class="line">cd hello-next</div><div class="line">npm init -y</div><div class="line">npm install --save react react-dom next</div><div class="line">mkdir pages</div></pre></td></tr></table></figure>
+<p>然后打开 helle-next 根目录下的”package.json”文件 添加如下npm脚本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;scripts&quot;: &#123;</div><div class="line">    &quot;dev&quot;: &quot;next&quot;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>现在一切都准备好了。运行以下命令，启动开发服务器：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm run dev</div></pre></td></tr></table></figure></p>
+<p>然后在你的浏览器打开<a href="http://localhost:3000" target="_blank" rel="external">http://localhost:3000</a></p>
+<p>你在屏幕上看到的输出是什么？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">✦Error No Page Found</div><div class="line">✓404 - This page could not be found</div><div class="line">✦Hello Next.js</div><div class="line">✦Hello World</div></pre></td></tr></table></figure>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[nextjs-lesson1-0]]></title>
+      <url>http://wyh2020.com/2017/04/26/nextjs-lesson1-0/</url>
+      <content type="html"><![CDATA[<p><a href="https://learnnextjs.com/basics/getting-started" target="_blank" rel="external">原文地址</a></p>
+<p>众所周知，现在创建单页面JavaScript应用程序是非常具有挑战性的。幸运的是，有一些项目可以使构建应用程序简单化快速化。    </p>
+<p><a href="https://github.com/facebookincubator/create-react-app" target="_blank" rel="external">Create React App</a> 就是一个很好栗子。</p>
+<p>即使如此，在你创建恰当的应用之前还会有一个很高的学习曲线。原因在于你要了解客户端路由、页面布局等。如果用服务端渲染来加快页面加载则会更困难。</p>
+<p><strong><em>所以，我们要简单并且可定制</em></strong></p>
+<p>想想如何创建PHP应用程序。你创建一些文件，编写PHP代码，然后将它部署。我们不必担心路由多，和应用程序服务器上的默认渲染。</p>
+<p><img src="https://cloud.githubusercontent.com/assets/50838/24116055/7076ba9c-0dcb-11e7-93d0-ba8f9ac8f6e4.png" alt=""></p>
+<p>这就是我们开发的Next.js。我们使用JavaScript和React，而不是PHP。下表是Next.js带来的一些非常酷的特征：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">提供默认服务器</div><div class="line">代码自动拆分加速页面加载</div><div class="line">简单的客户端路由(基于页面)</div><div class="line">开发环境支持基于webpack热替换(HMR)</div><div class="line">支持express或任何其他node.js http服务器</div><div class="line">Babel和Webpack的配置可定制化</div></pre></td></tr></table></figure></p>
+<p>听起来很棒，对吧？<br>让我们试试看。</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>Next.js同时支持Windows、Mac、Linux，只要在你系统上安装Node.js就可以创建Next.js应用。</p>
+<p>此外，你还需要一个文本编辑器写代码和一个终端应用程序调用一些命令。</p>
+<p>如果你是Windows，尝试用PowerShell。Next.js 在任何命令解析器或终端都能工作，但我们将在本指南中使用的一些UNIX特定命令。我们建议使用PowerShell。通过运行下列命令来开始创建实例项目：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">mkdir hello-next</div><div class="line">cd hello-next</div><div class="line">npm init -y</div><div class="line">npm install --save react react-dom next</div><div class="line">mkdir pages</div></pre></td></tr></table></figure>
+<p>然后打开 helle-next 根目录下的”package.json”文件 添加如下npm脚本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;scripts&quot;: &#123;</div><div class="line">    &quot;dev&quot;: &quot;next&quot;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>现在一切都准备好了。运行以下命令，启动开发服务器：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm run dev</div></pre></td></tr></table></figure></p>
+<p>然后在你的浏览器打开 <a href="http://localhost:3000" target="_blank" rel="external">http://localhost:3000</a></p>
+<p>你在屏幕上看到的输出是什么？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">✦Error No Page Found</div><div class="line">✓404 - This page could not be found</div><div class="line">✦Hello Next.js</div><div class="line">✦Hello World</div></pre></td></tr></table></figure>
+<h4 id="404页面"><a href="#404页面" class="headerlink" title="404页面"></a>404页面</h4><p>你将看到如下404页面：</p>
+<p><img src="https://cloud.githubusercontent.com/assets/50838/24114002/ac4786f2-0dc4-11e7-8d84-b6f33c8f9aae.png" alt=""></p>
+<h4 id="创建第一个页面"><a href="#创建第一个页面" class="headerlink" title="创建第一个页面"></a>创建第一个页面</h4><p>现在我们来创建我们的第一个页面。<br>创建一个名为”pages/index.js”的文件，并添加如下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">const Index = () =&gt; (</div><div class="line">  &lt;div&gt;</div><div class="line">    &lt;p&gt;Hello Next.js&lt;/p&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">)</div><div class="line"></div><div class="line">export default Index</div></pre></td></tr></table></figure></p>
+<p>现在你重新访问 <a href="http://localhost:3000" target="_blank" rel="external">http://localhost:3000</a> ，你将看到页面显示”Hello Next.js” 。</p>
+<p>在这里，我们从pages/index.js模块输出一个简单的React组件，<br>同样，你可以编写自己的React组件并输出。</p>
+<p><strong><em>确保你的React组件默认输出</em></strong></p>
+<p>现在尝试在Index页中提示语法错误。这里有一个例子：<br>(我们简单的移除<code>&lt;/p&gt;</code> HTML标签)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">const Index = () =&gt; (</div><div class="line">  &lt;div&gt;</div><div class="line">    &lt;p&gt;Hello Next.js</div><div class="line">  &lt;/div&gt;</div><div class="line">)</div><div class="line"></div><div class="line">export default Index</div></pre></td></tr></table></figure>
+<p>重新加载 <a href="http://localhost:3000" target="_blank" rel="external">http://localhost:3000</a> 将会发现什么？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">✦Nothing happened</div><div class="line">✦There&apos;s an error with page not found</div><div class="line">✓There&apos;s an error showing the syntax error</div><div class="line">✦There&apos;s an error with 500 - Internal Error</div></pre></td></tr></table></figure>
+<h4 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h4><p>默认情况下，Next.js将跟踪这样的错误并在浏览器中显示它。这可以帮助您识别错误并快速修复它们。<br>一旦你解决了这个问题，整个页面不需要重新加载就会立即展示。我们这样做，得助于Webpack的<a href="https://webpack.js.org/concepts/hot-module-replacement/" target="_blank" rel="external">hot module replacement</a>功能的帮助，Next.js默认支持。</p>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> nextjs </tag>
+            
+            <tag> js </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[使用Hexo搭建个人博客之旅]]></title>
       <url>http://wyh2020.com/2016/08/11/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%97%85/</url>
       <content type="html"><![CDATA[<p>我相信每个just do it的人都会想拥有自己的博客。<br>早年间玩过jekyll，很湿麻烦，没搭建成功过，囧！！后来发现了<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">Hexo</a>这玩意，可以说是一键部署，还不需要服务器数据库之类，只要懂点nodejs，会点MarkDown语法，买个域名就行了.so easy！    </p>
