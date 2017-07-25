@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hexo,github,coding," />
+  <meta name="keywords" content="SpringMVC,Swagger," />
 
 
 
@@ -84,22 +84,20 @@
 
 
 
-<meta name="description" content="目的:国内访问coding,国外访问github1、_config.yml配置见图: 2、coding上创建一个新项目这里只提供官网自行注册就行. 3、生成SSH公钥这玩意还是很简单的,略. 4、pages服务方式部署直接上图: 5、域名DNS解析配置直接上图:">
-<meta name="keywords" content="hexo,github,coding">
+<meta name="description" content="集成SpringMVC+Swaggerswagger是restful管理项目API工具 【1】pom.xml增加依赖包 123456789101112131415161718192021222324252627&amp;lt;!-- swagger-mvc --&amp;gt; &amp;lt;dependency&amp;gt;      &amp;lt;groupId&amp;gt;io.springfox&amp;lt;/groupId&amp;gt;">
+<meta name="keywords" content="SpringMVC,Swagger">
 <meta property="og:type" content="article">
-<meta property="og:title" content="将hexo博客同时托管到github和coding">
-<meta property="og:url" content="http://wyh2020.com/2016/08/11/将hexo博客同时托管到github和coding/index.html">
+<meta property="og:title" content="集成SpringMVC+Swagger">
+<meta property="og:url" content="http://wyh2020.com/2017/07/25/集成SpringMVC+Swagger/index.html">
 <meta property="og:site_name" content="Wyh&#39;s Blog">
-<meta property="og:description" content="目的:国内访问coding,国外访问github1、_config.yml配置见图: 2、coding上创建一个新项目这里只提供官网自行注册就行. 3、生成SSH公钥这玩意还是很简单的,略. 4、pages服务方式部署直接上图: 5、域名DNS解析配置直接上图:">
+<meta property="og:description" content="集成SpringMVC+Swaggerswagger是restful管理项目API工具 【1】pom.xml增加依赖包 123456789101112131415161718192021222324252627&amp;lt;!-- swagger-mvc --&amp;gt; &amp;lt;dependency&amp;gt;      &amp;lt;groupId&amp;gt;io.springfox&amp;lt;/groupId&amp;gt;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://wyh2020.com/uploads/config配置.jpg">
-<meta property="og:image" content="http://wyh2020.com/uploads/CodingPages服务配置.jpg">
-<meta property="og:image" content="http://wyh2020.com/uploads/域名DNS解析配置.jpg">
-<meta property="og:updated_time" content="2016-08-11T07:32:51.000Z">
+<meta property="og:image" content="http://wyh2020.com/uploads/集成SpringMVC+Swagger01.png">
+<meta property="og:updated_time" content="2017-07-25T15:55:54.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="将hexo博客同时托管到github和coding">
-<meta name="twitter:description" content="目的:国内访问coding,国外访问github1、_config.yml配置见图: 2、coding上创建一个新项目这里只提供官网自行注册就行. 3、生成SSH公钥这玩意还是很简单的,略. 4、pages服务方式部署直接上图: 5、域名DNS解析配置直接上图:">
-<meta name="twitter:image" content="http://wyh2020.com/uploads/config配置.jpg">
+<meta name="twitter:title" content="集成SpringMVC+Swagger">
+<meta name="twitter:description" content="集成SpringMVC+Swaggerswagger是restful管理项目API工具 【1】pom.xml增加依赖包 123456789101112131415161718192021222324252627&amp;lt;!-- swagger-mvc --&amp;gt; &amp;lt;dependency&amp;gt;      &amp;lt;groupId&amp;gt;io.springfox&amp;lt;/groupId&amp;gt;">
+<meta name="twitter:image" content="http://wyh2020.com/uploads/集成SpringMVC+Swagger01.png">
 
 
 
@@ -120,9 +118,9 @@
 
 
 
-  <link rel="canonical" href="http://wyh2020.com/2016/08/11/将hexo博客同时托管到github和coding/"/>
+  <link rel="canonical" href="http://wyh2020.com/2017/07/25/集成SpringMVC+Swagger/"/>
 
-  <title> 将hexo博客同时托管到github和coding | Wyh's Blog </title>
+  <title> 集成SpringMVC+Swagger | Wyh's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -265,7 +263,7 @@
             
             
               
-                将hexo博客同时托管到github和coding
+                集成SpringMVC+Swagger
               
             
           </h1>
@@ -277,8 +275,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-11T15:32:51+08:00" content="2016-08-11">
-              2016-08-11
+            <time itemprop="dateCreated" datetime="2017-07-25T23:55:54+08:00" content="2017-07-25">
+              2017-07-25
             </time>
           </span>
 
@@ -288,8 +286,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/08/11/将hexo博客同时托管到github和coding/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/11/将hexo博客同时托管到github和coding/" itemprop="commentsCount"></span>
+                <a href="/2017/07/25/集成SpringMVC+Swagger/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/07/25/集成SpringMVC+Swagger/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -317,11 +315,16 @@
       
 
       
-        <h2 id="目的-国内访问coding-国外访问github"><a href="#目的-国内访问coding-国外访问github" class="headerlink" title="目的:国内访问coding,国外访问github"></a>目的:国内访问coding,国外访问github</h2><h3 id="1、-config-yml配置"><a href="#1、-config-yml配置" class="headerlink" title="1、_config.yml配置"></a>1、_config.yml配置</h3><p>见图:<br><img src="/uploads/config配置.jpg" alt="_config.yml配置"></p>
-<h3 id="2、coding上创建一个新项目"><a href="#2、coding上创建一个新项目" class="headerlink" title="2、coding上创建一个新项目"></a>2、coding上创建一个新项目</h3><p>这里只提供<a href="https://coding.net" target="_blank" rel="external">官网</a>自行注册就行.</p>
-<h3 id="3、生成SSH公钥"><a href="#3、生成SSH公钥" class="headerlink" title="3、生成SSH公钥"></a>3、<a href="https://help.github.com/articles/generating-an-ssh-key/" target="_blank" rel="external">生成SSH公钥</a></h3><p>这玩意还是很简单的,略.</p>
-<h3 id="4、pages服务方式部署"><a href="#4、pages服务方式部署" class="headerlink" title="4、pages服务方式部署"></a>4、pages服务方式部署</h3><p>直接上图:<br><img src="/uploads/CodingPages服务配置.jpg" alt="CodingPages服务配置"></p>
-<h3 id="5、域名DNS解析配置"><a href="#5、域名DNS解析配置" class="headerlink" title="5、域名DNS解析配置"></a>5、域名DNS解析配置</h3><p>直接上图:<br><img src="/uploads/域名DNS解析配置.jpg" alt="域名DNS解析配置"></p>
+        <h2 id="集成SpringMVC-Swagger"><a href="#集成SpringMVC-Swagger" class="headerlink" title="集成SpringMVC+Swagger"></a>集成SpringMVC+Swagger</h2><h5 id="swagger是restful管理项目API工具"><a href="#swagger是restful管理项目API工具" class="headerlink" title="swagger是restful管理项目API工具"></a>swagger是restful管理项目API工具</h5><p> 【1】pom.xml增加依赖包<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">&lt;!-- swagger-mvc --&gt; </div><div class="line">&lt;dependency&gt;  </div><div class="line">    &lt;groupId&gt;io.springfox&lt;/groupId&gt;  </div><div class="line">    &lt;artifactId&gt;springfox-swagger2&lt;/artifactId&gt;  </div><div class="line">    &lt;version&gt;2.4.0&lt;/version&gt;  </div><div class="line">&lt;/dependency&gt;  </div><div class="line">&lt;dependency&gt;  </div><div class="line">    &lt;groupId&gt;io.springfox&lt;/groupId&gt;  </div><div class="line">    &lt;artifactId&gt;springfox-swagger-ui&lt;/artifactId&gt;  </div><div class="line">    &lt;version&gt;2.4.0&lt;/version&gt;  </div><div class="line">&lt;/dependency&gt; </div><div class="line">&lt;!-- json --&gt;</div><div class="line">&lt;dependency&gt;  </div><div class="line">    &lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt;  </div><div class="line">    &lt;artifactId&gt;jackson-core&lt;/artifactId&gt;  </div><div class="line">    &lt;version&gt;2.6.5&lt;/version&gt;  </div><div class="line">&lt;/dependency&gt;  </div><div class="line">&lt;dependency&gt;  </div><div class="line">    &lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt;  </div><div class="line">    &lt;artifactId&gt;jackson-databind&lt;/artifactId&gt;  </div><div class="line">    &lt;version&gt;2.6.5&lt;/version&gt;  </div><div class="line">&lt;/dependency&gt;  </div><div class="line">&lt;dependency&gt;  </div><div class="line">    &lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt;  </div><div class="line">    &lt;artifactId&gt;jackson-annotations&lt;/artifactId&gt;  </div><div class="line">    &lt;version&gt;2.6.5&lt;/version&gt;  </div><div class="line">&lt;/dependency&gt;</div></pre></td></tr></table></figure></p>
+<p> 【2】Swagger配置文件</p>
+ <figure class="highlight plain"><figcaption><span>com.wyh2020.fstore.config;</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">import org.springframework.context.annotation.Bean;</div><div class="line">import org.springframework.context.annotation.ComponentScan;</div><div class="line">import org.springframework.context.annotation.Configuration;</div><div class="line">import org.springframework.web.servlet.config.annotation.EnableWebMvc;</div><div class="line">import springfox.documentation.builders.ApiInfoBuilder;</div><div class="line">import springfox.documentation.builders.PathSelectors;</div><div class="line">import springfox.documentation.builders.RequestHandlerSelectors;</div><div class="line">import springfox.documentation.service.ApiInfo;</div><div class="line">import springfox.documentation.service.Contact;</div><div class="line">import springfox.documentation.spi.DocumentationType;</div><div class="line">import springfox.documentation.spring.web.plugins.Docket;</div><div class="line">import springfox.documentation.swagger2.annotations.EnableSwagger2;</div><div class="line"></div><div class="line">/**</div><div class="line"> * Created with wyh.</div><div class="line"> * Date: 2017/7/3</div><div class="line"> * Time: 下午2:23</div><div class="line"> */</div><div class="line"></div><div class="line">@EnableWebMvc</div><div class="line">@EnableSwagger2//启用Swagger2</div><div class="line">@Configuration//让Spring来加载该类配置</div><div class="line">@ComponentScan(basePackages =&quot;com.wyh2020.fstore&quot;)</div><div class="line">public class SwaggerConfig &#123;</div><div class="line">    @Bean</div><div class="line">    public Docket buildDocket() &#123;</div><div class="line">        return new Docket(DocumentationType.SWAGGER_2)</div><div class="line">                .apiInfo(buildApiInf())</div><div class="line">                .select()</div><div class="line">                .apis(RequestHandlerSelectors.basePackage(&quot;com.wyh2020.fstore.controller&quot;))//controller路径</div><div class="line">                .paths(PathSelectors.any())</div><div class="line">                .build();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    private ApiInfo buildApiInf() &#123;</div><div class="line">        return new ApiInfoBuilder()</div><div class="line">                .title(&quot;SpringMVC中使用Swagger2构建RESTful APIs&quot;)</div><div class="line">                .termsOfServiceUrl(&quot;https://wyh2020/openapi/&quot;)</div><div class="line">                .description(&quot;&quot;)</div><div class="line">                .contact(new Contact(&quot;wyh2020&quot;, &quot;https://wyh2020.com/&quot;, &quot;wangyonghua@qianmi.com&quot;))</div><div class="line">                .version(&quot;1.0&quot;)</div><div class="line">                .build();</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p> 【3】Controller中使用注解添加API文档</p>
+ <figure class="highlight plain"><figcaption><span>com.wyh2020.fstore.controller;</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">import com.wyh2020.fstore.pojo.Test;</div><div class="line">import com.wyh2020.fstore.service.TestService;</div><div class="line">import io.swagger.annotations.Api;</div><div class="line">import io.swagger.annotations.ApiOperation;</div><div class="line">import org.apache.log4j.Logger;</div><div class="line">import org.springframework.beans.factory.annotation.Autowired;</div><div class="line">import org.springframework.web.bind.annotation.RequestMapping;</div><div class="line">import org.springframework.web.bind.annotation.RequestMethod;</div><div class="line">import org.springframework.web.bind.annotation.RestController;</div><div class="line"></div><div class="line">import java.util.List;</div><div class="line"></div><div class="line">/**</div><div class="line"> * Created with wyh.</div><div class="line"> * Date: 2017/7/2</div><div class="line"> * Time: 上午12:47</div><div class="line"> */</div><div class="line">@RestController</div><div class="line">@RequestMapping(&quot;/test&quot;)</div><div class="line">@Api(value = &quot;TestController&quot;, description = &quot;测试接口&quot;)</div><div class="line">public class TestController &#123;</div><div class="line"></div><div class="line">    @Autowired</div><div class="line">    private TestService testService;</div><div class="line"></div><div class="line"></div><div class="line">    Logger logger = Logger.getLogger(TestController.class);</div><div class="line"></div><div class="line"></div><div class="line">    @ApiOperation(value = &quot;查询Test列表&quot;, notes = &quot;查询Test列表&quot;, httpMethod = &quot;GET&quot;)</div><div class="line">    @RequestMapping(value = &quot;/queryList&quot;, method = &#123;RequestMethod.GET, RequestMethod.POST&#125;)</div><div class="line">    public String getTestList()&#123;</div><div class="line">        logger.info(&quot;进入接口啦啦啦啦啦啦&quot;);</div><div class="line">        List&lt;Test&gt; testList = testService.getTestList();</div><div class="line"></div><div class="line">        return testList.toString();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p> 【4】在spring-mvc.xml中声明swagger配置bean</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;bean class=&quot;springfox.documentation.swagger2.configuration.Swagger2DocumentationConfiguration&quot; id=&quot;swagger2Config&quot;/&gt;</div></pre></td></tr></table></figure>
+<p> 【5】在spring-mvc.xml中配置资源文件<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;mvc:resources location=&quot;classpath:/META-INF/resources/&quot; mapping=&quot;swagger-ui.html&quot;/&gt;  </div><div class="line">&lt;mvc:resources location=&quot;classpath:/META-INF/resources/webjars/&quot; mapping=&quot;/webjars/**&quot;/&gt;</div></pre></td></tr></table></figure></p>
+<p> 【6】通过以上配置启动项目访问即可看到<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">localhost:8080/swagger-ui.html</div></pre></td></tr></table></figure></p>
+<p> <img src="/uploads/集成SpringMVC+Swagger01.png" alt="效果图"></p>
 
       
     </div>
@@ -344,11 +347,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag">#hexo</a>
+            <a href="/tags/SpringMVC/" rel="tag">#SpringMVC</a>
           
-            <a href="/tags/github/" rel="tag">#github</a>
-          
-            <a href="/tags/coding/" rel="tag">#coding</a>
+            <a href="/tags/Swagger/" rel="tag">#Swagger</a>
           
         </div>
       
@@ -357,13 +358,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/07/25/搭建SSM工程过程/" rel="next" title="搭建SSM工程">
+                <i class="fa fa-chevron-left"></i> 搭建SSM工程
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/08/11/使用Hexo搭建个人博客之旅/" rel="prev" title="使用Hexo搭建个人博客之旅">
-                使用Hexo搭建个人博客之旅 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -415,8 +416,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/08/11/将hexo博客同时托管到github和coding/"
-           data-title="将hexo博客同时托管到github和coding" data-url="http://wyh2020.com/2016/08/11/将hexo博客同时托管到github和coding/">
+      <div class="ds-thread" data-thread-key="2017/07/25/集成SpringMVC+Swagger/"
+           data-title="集成SpringMVC+Swagger" data-url="http://wyh2020.com/2017/07/25/集成SpringMVC+Swagger/">
       </div>
     
   </div>
@@ -514,7 +515,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#目的-国内访问coding-国外访问github"><span class="nav-number">1.</span> <span class="nav-text">目的:国内访问coding,国外访问github</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、-config-yml配置"><span class="nav-number">1.1.</span> <span class="nav-text">1、_config.yml配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、coding上创建一个新项目"><span class="nav-number">1.2.</span> <span class="nav-text">2、coding上创建一个新项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、生成SSH公钥"><span class="nav-number">1.3.</span> <span class="nav-text">3、生成SSH公钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、pages服务方式部署"><span class="nav-number">1.4.</span> <span class="nav-text">4、pages服务方式部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、域名DNS解析配置"><span class="nav-number">1.5.</span> <span class="nav-text">5、域名DNS解析配置</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#集成SpringMVC-Swagger"><span class="nav-number">1.</span> <span class="nav-text">集成SpringMVC+Swagger</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#swagger是restful管理项目API工具"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">swagger是restful管理项目API工具</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
