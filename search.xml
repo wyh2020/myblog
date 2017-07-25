@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title></title>
+      <title><![CDATA[搭建SSM工程]]></title>
       <url>http://wyh2020.com/2017/07/25/%E6%90%AD%E5%BB%BASSM%E5%B7%A5%E7%A8%8B%E8%BF%87%E7%A8%8B/</url>
       <content type="html"><![CDATA[<h1 id="搭建SSM工程"><a href="#搭建SSM工程" class="headerlink" title="搭建SSM工程"></a>搭建SSM工程</h1><p> Spring+SpringMVC+Mybatis </p>
 <h4 id="使用IntelliJ-IDEA创建spring-maven-SpringMVC-MyBatis项目"><a href="#使用IntelliJ-IDEA创建spring-maven-SpringMVC-MyBatis项目" class="headerlink" title="使用IntelliJ IDEA创建spring + maven + SpringMVC + MyBatis项目"></a>使用IntelliJ IDEA创建spring + maven + SpringMVC + MyBatis项目</h4><hr>
@@ -25,10 +25,20 @@
 <h2 id="3、-项目配置和部署"><a href="#3、-项目配置和部署" class="headerlink" title="3、 项目配置和部署"></a>3、 项目配置和部署</h2><h3 id="【3-1】-File-gt-Project-Structure，进入创建项目配置窗口。"><a href="#【3-1】-File-gt-Project-Structure，进入创建项目配置窗口。" class="headerlink" title="【3.1】 File -&gt; Project Structure，进入创建项目配置窗口。"></a>【3.1】 File -&gt; Project Structure，进入创建项目配置窗口。</h3><h3 id="【3-2】创建一个Tomcat容器实例，并把项目部署进去"><a href="#【3-2】创建一个Tomcat容器实例，并把项目部署进去" class="headerlink" title="【3.2】创建一个Tomcat容器实例，并把项目部署进去"></a>【3.2】创建一个Tomcat容器实例，并把项目部署进去</h3><p> <img src="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/560D95A0423F4CBDBD7F60CC3DF2E8E3/4887" alt="1"></p>
 <h3 id="【3-2】创建一个Tomcat容器实例，并把项目部署进去-1"><a href="#【3-2】创建一个Tomcat容器实例，并把项目部署进去-1" class="headerlink" title="【3.2】创建一个Tomcat容器实例，并把项目部署进去"></a>【3.2】创建一个Tomcat容器实例，并把项目部署进去</h3><p><img src="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/75CA32B04C9D4CA98A1F32416ED11938/4889" alt="2"><br><img src="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/0EEFDB22528F4C68A19AA9EB7D059303/4891" alt="3"><br><img src="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/0EFDC81D50D34D75B274AFB90BAF6735/4893" alt="4"></p>
 <h3 id="【3-3】项目所需配置好项目访问的根路径，然后启动Tomcat。"><a href="#【3-3】项目所需配置好项目访问的根路径，然后启动Tomcat。" class="headerlink" title="【3.3】项目所需配置好项目访问的根路径，然后启动Tomcat。"></a>【3.3】项目所需配置好项目访问的根路径，然后启动Tomcat。</h3><p><img src="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/4A1FD9AF9F374621BBFE722AEEB96C5F/4903" alt="5"></p>
-<h3 id="【3-4】-在浏览器地址栏中输入：http-localhost-8080-test-queryList"><a href="#【3-4】-在浏览器地址栏中输入：http-localhost-8080-test-queryList" class="headerlink" title="【3.4】  在浏览器地址栏中输入：http://localhost:8080/test/queryList"></a>【3.4】  在浏览器地址栏中输入：<a href="http://localhost:8080/test/queryList" target="_blank" rel="external">http://localhost:8080/test/queryList</a></h3><p> <img src="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/13C072B6681C4890BF469C7CFFBB796F/4895" alt="6"></p>
+<h3 id="【3-4】-在浏览器地址栏中输入：http-localhost-8080-test-queryList"><a href="#【3-4】-在浏览器地址栏中输入：http-localhost-8080-test-queryList" class="headerlink" title="【3.4】  在浏览器地址栏中输入：http://localhost:8080/test/queryList"></a>【3.4】  在浏览器地址栏中输入：<a href="http://localhost:8080/test/queryList" target="_blank" rel="external">http://localhost:8080/test/queryList</a></h3><p> <img src="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/0432686C003A40098974A31CBB8376F4/4908" alt="6"></p>
 <h4 id="项目所需看到图中显示效果，则表示项目搭建成功。"><a href="#项目所需看到图中显示效果，则表示项目搭建成功。" class="headerlink" title="项目所需看到图中显示效果，则表示项目搭建成功。"></a>项目所需看到图中显示效果，则表示项目搭建成功。</h4><hr>
 ]]></content>
       
+        
+        <tags>
+            
+            <tag> Spring </tag>
+            
+            <tag> SpringMVC </tag>
+            
+            <tag> Mybatis </tag>
+            
+        </tags>
         
     </entry>
     
