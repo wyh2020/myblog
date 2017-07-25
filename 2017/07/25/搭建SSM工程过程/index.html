@@ -1,12 +1,330 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/uploads/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="搭建SSM工程 Spring+SpringMVC+Mybatis  使用IntelliJ IDEA创建spring + maven + SpringMVC + MyBatis项目 1、创建maven项目【1.1】 File -&amp;gt; New Module，进入创建项目窗口。  【1.2】 点击Next，填写GroupId、ArtifactId和Version  【1.3】 接着下一步，这里需要注">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Wyh's Blog">
+<meta property="og:url" content="http://wyh2020.com/2017/07/25/搭建SSM工程过程/index.html">
+<meta property="og:site_name" content="Wyh's Blog">
+<meta property="og:description" content="搭建SSM工程 Spring+SpringMVC+Mybatis  使用IntelliJ IDEA创建spring + maven + SpringMVC + MyBatis项目 1、创建maven项目【1.1】 File -&amp;gt; New Module，进入创建项目窗口。  【1.2】 点击Next，填写GroupId、ArtifactId和Version  【1.3】 接着下一步，这里需要注">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/BED6F904A13343F2B31A36F0AA364806/4811">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/BD0360D766B64483BEF831B9B44C540D/4818">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/BED41053C3AB4AA3971E037652DE09EF/4828">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/5C1670B920FD4C5F8DC72DEAA1537286/4836">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/6C879B5C352D48EB814AA88FD9322AE3/4841">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/560D95A0423F4CBDBD7F60CC3DF2E8E3/4887">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/75CA32B04C9D4CA98A1F32416ED11938/4889">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/0EEFDB22528F4C68A19AA9EB7D059303/4891">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/0EFDC81D50D34D75B274AFB90BAF6735/4893">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/4A1FD9AF9F374621BBFE722AEEB96C5F/4903">
+<meta property="og:image" content="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/13C072B6681C4890BF469C7CFFBB796F/4895">
+<meta property="og:updated_time" content="2017-07-25T15:08:04.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Wyh's Blog">
+<meta name="twitter:description" content="搭建SSM工程 Spring+SpringMVC+Mybatis  使用IntelliJ IDEA创建spring + maven + SpringMVC + MyBatis项目 1、创建maven项目【1.1】 File -&amp;gt; New Module，进入创建项目窗口。  【1.2】 点击Next，填写GroupId、ArtifactId和Version  【1.3】 接着下一步，这里需要注">
+<meta name="twitter:image" content="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/BED6F904A13343F2B31A36F0AA364806/4811">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://wyh2020.com/2017/07/25/搭建SSM工程过程/"/>
+
+  <title>  | Wyh's Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
   
   
     
-    <entry>
-      <title></title>
-      <url>http://wyh2020.com/2017/07/25/%E6%90%AD%E5%BB%BASSM%E5%B7%A5%E7%A8%8B%E8%BF%87%E7%A8%8B/</url>
-      <content type="html"><![CDATA[<h1 id="搭建SSM工程"><a href="#搭建SSM工程" class="headerlink" title="搭建SSM工程"></a>搭建SSM工程</h1><p> Spring+SpringMVC+Mybatis </p>
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Wyh's Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-07-25T23:08:04+08:00" content="2017-07-25">
+              2017-07-25
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/07/25/搭建SSM工程过程/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/07/25/搭建SSM工程过程/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-file-o">本文总阅读量</i>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+              </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="搭建SSM工程"><a href="#搭建SSM工程" class="headerlink" title="搭建SSM工程"></a>搭建SSM工程</h1><p> Spring+SpringMVC+Mybatis </p>
 <h4 id="使用IntelliJ-IDEA创建spring-maven-SpringMVC-MyBatis项目"><a href="#使用IntelliJ-IDEA创建spring-maven-SpringMVC-MyBatis项目" class="headerlink" title="使用IntelliJ IDEA创建spring + maven + SpringMVC + MyBatis项目"></a>使用IntelliJ IDEA创建spring + maven + SpringMVC + MyBatis项目</h4><hr>
 <h2 id="1、创建maven项目"><a href="#1、创建maven项目" class="headerlink" title="1、创建maven项目"></a>1、创建maven项目</h2><h3 id="【1-1】-File-gt-New-Module，进入创建项目窗口。"><a href="#【1-1】-File-gt-New-Module，进入创建项目窗口。" class="headerlink" title="【1.1】 File -&gt; New Module，进入创建项目窗口。"></a>【1.1】 File -&gt; New Module，进入创建项目窗口。</h3><p> <img src="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/BED6F904A13343F2B31A36F0AA364806/4811" alt="创建maven-web工程"></p>
 <h3 id="【1-2】-点击Next，填写GroupId、ArtifactId和Version"><a href="#【1-2】-点击Next，填写GroupId、ArtifactId和Version" class="headerlink" title="【1.2】 点击Next，填写GroupId、ArtifactId和Version"></a>【1.2】 点击Next，填写GroupId、ArtifactId和Version</h3><p> <img src="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/BD0360D766B64483BEF831B9B44C540D/4818" alt="填写GroupId、ArtifactId、Version"></p>
@@ -27,150 +345,480 @@
 <h3 id="【3-3】项目所需配置好项目访问的根路径，然后启动Tomcat。"><a href="#【3-3】项目所需配置好项目访问的根路径，然后启动Tomcat。" class="headerlink" title="【3.3】项目所需配置好项目访问的根路径，然后启动Tomcat。"></a>【3.3】项目所需配置好项目访问的根路径，然后启动Tomcat。</h3><p><img src="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/4A1FD9AF9F374621BBFE722AEEB96C5F/4903" alt="5"></p>
 <h3 id="【3-4】-在浏览器地址栏中输入：http-localhost-8080-test-queryList"><a href="#【3-4】-在浏览器地址栏中输入：http-localhost-8080-test-queryList" class="headerlink" title="【3.4】  在浏览器地址栏中输入：http://localhost:8080/test/queryList"></a>【3.4】  在浏览器地址栏中输入：<a href="http://localhost:8080/test/queryList" target="_blank" rel="external">http://localhost:8080/test/queryList</a></h3><p> <img src="http://note.youdao.com/yws/public/resource/a5812c27766736c7d94c3c86901b7f31/xmlnote/13C072B6681C4890BF469C7CFFBB796F/4895" alt="6"></p>
 <h4 id="项目所需看到图中显示效果，则表示项目搭建成功。"><a href="#项目所需看到图中显示效果，则表示项目搭建成功。" class="headerlink" title="项目所需看到图中显示效果，则表示项目搭建成功。"></a>项目所需看到图中显示效果，则表示项目搭建成功。</h4><hr>
-]]></content>
+
+      
+    </div>
+
+    <div>
       
         
-    </entry>
-    
-    <entry>
-      <title><![CDATA[nextjs-lesson2-0]]></title>
-      <url>http://wyh2020.com/2017/04/26/nextjs-lesson2-0/</url>
-      <content type="html"><![CDATA[<p><a href="https://learnnextjs.com/basics/navigate-between-pages" target="_blank" rel="external">原文地址</a></p>
-<h3 id="页面导航"><a href="#页面导航" class="headerlink" title="页面导航"></a>页面导航</h3><p>现在我们知道如何创建一个简单的Next.js应用程序并运行它。虽然我们简单的应用程序只有一个页面，但我们想添加多少页面都可以。例如，我们可以创建一个“关于”页面，’pages/about.js’代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">export default () =&gt; (</div><div class="line">  &lt;div&gt;</div><div class="line">    &lt;p&gt;This is the about page&lt;/p&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">)</div></pre></td></tr></table></figure>
-<p>然后我们可以访问 <a href="http://localhost:3000/about" target="_blank" rel="external">http://localhost:3000/about</a></p>
-<p>在那之后，我们需要将这些页面关联起来。我们可以使用HTML“A”标签。但是，它执行的不是客户端导航，而是服务器端导航，这不是我们想要的。</p>
-<p>为了支持客户端导航，我们需要使用next/link里的Link组件的API。</p>
-<p>让我们来看看如何使用它。</p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>为了跟随这一课，你需要有一个简单的next.js APP。为此，下载以下示例应用程序：<br>为了学习这个课程，我们准备了一个简单的Next.js应用。请下载示例应用：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/arunoda/learnnextjs-demo.git</div><div class="line">cd learnnextjs-demo</div><div class="line">git checkout getting-started</div></pre></td></tr></table></figure>
-<p>执行以下命令:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install</div><div class="line">npm run dev</div></pre></td></tr></table></figure>
-<p>现在可以通过导航<a href="http://localhost:3000/" target="_blank" rel="external">http://localhost:3000/</a> 来访问应用。</p>
-<h4 id="Link的使用"><a href="#Link的使用" class="headerlink" title="Link的使用"></a>Link的使用</h4><p>现在我们要在两个页面间使用 ‘next/link’。</p>
-<p>在’pages/index.js’添加如下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">// This is the Link API</div><div class="line">import Link from &apos;next/link&apos;</div><div class="line"></div><div class="line">const Index = () =&gt; (</div><div class="line">  &lt;div&gt;</div><div class="line">    &lt;Link href=&quot;/about&quot;&gt;</div><div class="line">      &lt;a&gt;About Page&lt;/a&gt;</div><div class="line">    &lt;/Link&gt;</div><div class="line">    &lt;p&gt;Hello Next.js&lt;/p&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">)</div><div class="line"></div><div class="line">export default Index</div></pre></td></tr></table></figure>
-<p>在这里我们已经导入’next/link’ 并命名为 Link，使用方法如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;Link href=&quot;/about&quot;&gt;</div><div class="line">  &lt;a&gt;About Page&lt;/a&gt;</div><div class="line">&lt;/Link&gt;</div></pre></td></tr></table></figure>
-<p>现在尝试访问 <a href="http://localhost:3000/" target="_blank" rel="external">http://localhost:3000/</a></p>
-<p>然后点击 “About Page” 链接。它会导航到”About”页面。</p>
-<p>这是客户端导航；这个动作发生在浏览器，并不会向服务器发请求。<br>你可以通过打开浏览器的网络请求检查来验证这一点。<br>现在我们来做一个简单的任务：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">访问 http://localhost:3000/</div><div class="line">然后点击&quot;About Page&quot;</div><div class="line">然后点击浏览器后退按钮</div></pre></td></tr></table></figure></p>
-<p>点击后退按钮后下面描述那个最准确？</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">✦后退按钮没反应。</div><div class="line">✦在浏览器控制台抛出错误</div><div class="line">✓在客户端导航到主页面</div><div class="line">✦弹出警告&quot;import &apos;next/back&apos; to support back button&quot;</div></pre></td></tr></table></figure>
-<h4 id="支持客户端历史"><a href="#支持客户端历史" class="headerlink" title="支持客户端历史"></a>支持客户端历史</h4><p>当点击后退按钮，页面只在客户端导航到了首页；next/link帮您处理所有的location.history。<br>您甚至不需要编写一行客户端路由代码。<br>只需简单的链接页面。</p>
-<h4 id="Link样式"><a href="#Link样式" class="headerlink" title="Link样式"></a>Link样式</h4><p>大多数时候，我们可能想要设计我们的链接。我们可以这样做：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;Link href=&quot;/about&quot;&gt;</div><div class="line">  &lt;a style=&#123;&#123; fontSize: 20 &#125;&#125;&gt;About Page&lt;/a&gt;</div><div class="line">&lt;/Link&gt;</div></pre></td></tr></table></figure></p>
-<p>一旦我们添加这个，你可以看到正确应用的样式。<br>改成这样怎么样？</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;Link href=&quot;/about&quot; style=&#123;&#123; fontSize: 20 &#125;&#125;&gt;</div><div class="line">  &lt;a&gt;About Page&lt;/a&gt;</div><div class="line">&lt;/Link&gt;</div></pre></td></tr></table></figure>
-<p>上面的代码发生了什么变化？</p>
-<p>✦正如预期的一样样式生效。<br>✓链接的样式没有生效。<br>✦页面重载后样式生效。<br>✦样式生效，但在控制台的警告。</p>
-<h4 id="Link只是一个高阶组件（HOC）"><a href="#Link只是一个高阶组件（HOC）" class="headerlink" title="Link只是一个高阶组件（HOC）"></a>Link只是一个高阶组件（HOC）</h4><p>其实，在next/link的样式没有效果。那是因为next/link是一个高阶组件，只有接受“href”和一些类似的属性。如果需要加样式，则需要对基础组件进行操作。<br>这就是我们说的Link。</p>
-]]></content>
+
+      
+    </div>
+
+    <div>
       
         
-    </entry>
-    
-    <entry>
-      <title><![CDATA[nextjs-lesson1-0]]></title>
-      <url>http://wyh2020.com/2017/04/26/nextjs-lesson1-0/</url>
-      <content type="html"><![CDATA[<h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><p><a href="https://learnnextjs.com/basics/getting-started" target="_blank" rel="external">原文地址</a></p>
-<p>众所周知，现在创建单页面JavaScript应用程序是非常具有挑战性的。幸运的是，有一些项目可以使构建应用程序简单化快速化。    </p>
-<p><a href="https://github.com/facebookincubator/create-react-app" target="_blank" rel="external">Create React App</a> 就是一个很好栗子。</p>
-<p>即使如此，在你创建恰当的应用之前还会有一个很高的学习曲线。原因在于你要了解客户端路由、页面布局等。如果用服务端渲染来加快页面加载则会更困难。</p>
-<p><strong><em>所以，我们要简单并且可定制</em></strong></p>
-<p>想想如何创建PHP应用程序。你创建一些文件，编写PHP代码，然后将它部署。我们不必担心路由多，和应用程序服务器上的默认渲染。</p>
-<p><img src="https://cloud.githubusercontent.com/assets/50838/24116055/7076ba9c-0dcb-11e7-93d0-ba8f9ac8f6e4.png" alt=""></p>
-<p>这就是我们开发的Next.js。我们使用JavaScript和React，而不是PHP。下表是Next.js带来的一些非常酷的特征：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">提供默认服务器</div><div class="line">代码自动拆分加速页面加载</div><div class="line">简单的客户端路由(基于页面)</div><div class="line">开发环境支持基于webpack热替换(HMR)</div><div class="line">支持express或任何其他node.js http服务器</div><div class="line">Babel和Webpack的配置可定制化</div></pre></td></tr></table></figure></p>
-<p>听起来很棒，对吧？<br>让我们试试看。</p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>Next.js同时支持Windows、Mac、Linux，只要在你系统上安装Node.js就可以创建Next.js应用。</p>
-<p>此外，你还需要一个文本编辑器写代码和一个终端应用程序调用一些命令。</p>
-<p>如果你是Windows，尝试用PowerShell。Next.js 在任何命令解析器或终端都能工作，但我们将在本指南中使用的一些UNIX特定命令。我们建议使用PowerShell。通过运行下列命令来开始创建实例项目：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">mkdir hello-next</div><div class="line">cd hello-next</div><div class="line">npm init -y</div><div class="line">npm install --save react react-dom next</div><div class="line">mkdir pages</div></pre></td></tr></table></figure>
-<p>然后打开 helle-next 根目录下的”package.json”文件 添加如下npm脚本：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;scripts&quot;: &#123;</div><div class="line">    &quot;dev&quot;: &quot;next&quot;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>现在一切都准备好了。运行以下命令，启动开发服务器：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm run dev</div></pre></td></tr></table></figure></p>
-<p>然后在你的浏览器打开 <a href="http://localhost:3000" target="_blank" rel="external">http://localhost:3000</a></p>
-<p>你在屏幕上看到的输出是什么？</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">✦Error No Page Found</div><div class="line">✓404 - This page could not be found</div><div class="line">✦Hello Next.js</div><div class="line">✦Hello World</div></pre></td></tr></table></figure>
-<h4 id="404页面"><a href="#404页面" class="headerlink" title="404页面"></a>404页面</h4><p>你将看到如下404页面：</p>
-<p><img src="https://cloud.githubusercontent.com/assets/50838/24114002/ac4786f2-0dc4-11e7-8d84-b6f33c8f9aae.png" alt=""></p>
-<h4 id="创建第一个页面"><a href="#创建第一个页面" class="headerlink" title="创建第一个页面"></a>创建第一个页面</h4><p>现在我们来创建我们的第一个页面。<br>创建一个名为”pages/index.js”的文件，并添加如下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">const Index = () =&gt; (</div><div class="line">  &lt;div&gt;</div><div class="line">    &lt;p&gt;Hello Next.js&lt;/p&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">)</div><div class="line"></div><div class="line">export default Index</div></pre></td></tr></table></figure></p>
-<p>现在你重新访问 <a href="http://localhost:3000" target="_blank" rel="external">http://localhost:3000</a> ，你将看到页面显示”Hello Next.js” 。</p>
-<p>在这里，我们从pages/index.js模块输出一个简单的React组件，<br>同样，你可以编写自己的React组件并输出。</p>
-<p><strong><em>确保你的React组件默认输出</em></strong></p>
-<p>现在尝试在Index页中提示语法错误。这里有一个例子：<br>(我们简单的移除<code>&lt;/p&gt;</code> HTML标签)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">const Index = () =&gt; (</div><div class="line">  &lt;div&gt;</div><div class="line">    &lt;p&gt;Hello Next.js</div><div class="line">  &lt;/div&gt;</div><div class="line">)</div><div class="line"></div><div class="line">export default Index</div></pre></td></tr></table></figure>
-<p>重新加载 <a href="http://localhost:3000" target="_blank" rel="external">http://localhost:3000</a> 将会发现什么？</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">✦Nothing happened</div><div class="line">✦There&apos;s an error with page not found</div><div class="line">✓There&apos;s an error showing the syntax error</div><div class="line">✦There&apos;s an error with 500 - Internal Error</div></pre></td></tr></table></figure>
-<h4 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h4><p>默认情况下，Next.js将跟踪这样的错误并在浏览器中显示它。这可以帮助您识别错误并快速修复它们。<br>一旦你解决了这个问题，整个页面不需要重新加载就会立即展示。我们这样做，得助于Webpack的<a href="https://webpack.js.org/concepts/hot-module-replacement/" target="_blank" rel="external">hot module replacement</a>功能的帮助，Next.js默认支持。</p>
-]]></content>
+
       
-        
-        <tags>
-            
-            <tag> nextjs </tag>
-            
-            <tag> js </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[使用Hexo搭建个人博客之旅]]></title>
-      <url>http://wyh2020.com/2016/08/11/%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%97%85/</url>
-      <content type="html"><![CDATA[<p>我相信每个just do it的人都会想拥有自己的博客。<br>早年间玩过jekyll，很湿麻烦，没搭建成功过，囧！！后来发现了<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">Hexo</a>这玩意，可以说是一键部署，还不需要服务器数据库之类，只要懂点nodejs，会点MarkDown语法，买个域名就行了.so easy！    </p>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><h4 id="1、安装node"><a href="#1、安装node" class="headerlink" title="1、安装node"></a>1、安装node</h4><p><a href="http://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="external">安装教程</a><br>Mac上安装，执行下面命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g node</div></pre></td></tr></table></figure></p>
-<h4 id="2、安装git"><a href="#2、安装git" class="headerlink" title="2、安装git"></a>2、安装git</h4><p><a href="https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git" target="_blank" rel="external">安装教程</a><br>Mac上自带</p>
-<h4 id="3、申请github"><a href="#3、申请github" class="headerlink" title="3、申请github"></a>3、申请github</h4><p>提供<a href="https://github.com/" target="_blank" rel="external">github</a>地址，自行注册就行。</p>
-<h4 id="4、安装hexo"><a href="#4、安装hexo" class="headerlink" title="4、安装hexo"></a>4、安装hexo</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo npm install -g hexo</div></pre></td></tr></table></figure>
-<h4 id="5、初始化项目"><a href="#5、初始化项目" class="headerlink" title="5、初始化项目"></a>5、初始化项目</h4><p>先创建你的项目目录，然后cd到该目录下，执行初始化操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure></p>
-<h4 id="6、生成静态页面"><a href="#6、生成静态页面" class="headerlink" title="6、生成静态页面"></a>6、生成静态页面</h4><p>在你项目目录下执行命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate (或 hexo g)</div></pre></td></tr></table></figure></p>
-<h4 id="7、本地服务启动"><a href="#7、本地服务启动" class="headerlink" title="7、本地服务启动"></a>7、本地服务启动</h4><p>调试看看<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server (或 hexo s)</div></pre></td></tr></table></figure></p>
-<p>然后浏览器访问<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 就可以看到效果啦。</p>
-<h4 id="8、建立Repository"><a href="#8、建立Repository" class="headerlink" title="8、建立Repository"></a>8、建立Repository</h4><p>前提：建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】.<br>现在我们需要修改_config.yml(该文件就在项目跟目录下)文件，来建立关联，执行命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim _config.yml</div></pre></td></tr></table></figure></p>
-<p>在最下面，改为：（注意： : 后面要有空格;wyh2020改为你的github帐号名）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/wyh2020/wyh2020.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
-<h4 id="9、部署"><a href="#9、部署" class="headerlink" title="9、部署"></a>9、部署</h4><p>先执行下面命令才能进行部署：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
-<p>部署命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo deploy (或hexo d)</div></pre></td></tr></table></figure></p>
-<p>然后在浏览器中浏览 <a href="http://wyh2020.github.io" target="_blank" rel="external">http://wyh2020.github.io</a> 就OVER了(wyh2020改为你的github帐号名).</p>
-<h4 id="10、配置域名"><a href="#10、配置域名" class="headerlink" title="10、配置域名"></a>10、配置域名</h4><p>我申请的是万网(已经被阿里收购了)，一定要实名认证哦. 不然没效果.<br>域名解析配置如图：<br><img src="/uploads/域名解析截图.jpg" alt="域名解析配置"></p>
-<h4 id="11、其它"><a href="#11、其它" class="headerlink" title="11、其它"></a>11、其它</h4><p>每次部署的步骤，可按以下三步来进行.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
-<p>常用命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;postName&quot; #新建文章</div><div class="line">hexo new page &quot;pageName&quot; #新建页面</div><div class="line">hexo generate #生成静态页面至public目录</div><div class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</div><div class="line">hexo deploy #将.deploy目录部署到GitHub</div><div class="line">hexo help  # 查看帮助</div><div class="line">hexo version  #查看Hexo的版本</div></pre></td></tr></table></figure></p>
-]]></content>
+    </div>
+
+    <footer class="post-footer">
       
-        
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> 博客 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[将hexo博客同时托管到github和coding]]></title>
-      <url>http://wyh2020.com/2016/08/11/%E5%B0%86hexo%E5%8D%9A%E5%AE%A2%E5%90%8C%E6%97%B6%E6%89%98%E7%AE%A1%E5%88%B0github%E5%92%8Ccoding/</url>
-      <content type="html"><![CDATA[<h2 id="目的-国内访问coding-国外访问github"><a href="#目的-国内访问coding-国外访问github" class="headerlink" title="目的:国内访问coding,国外访问github"></a>目的:国内访问coding,国外访问github</h2><h3 id="1、-config-yml配置"><a href="#1、-config-yml配置" class="headerlink" title="1、_config.yml配置"></a>1、_config.yml配置</h3><p>见图:<br><img src="/uploads/config配置.jpg" alt="_config.yml配置"></p>
-<h3 id="2、coding上创建一个新项目"><a href="#2、coding上创建一个新项目" class="headerlink" title="2、coding上创建一个新项目"></a>2、coding上创建一个新项目</h3><p>这里只提供<a href="https://coding.net" target="_blank" rel="external">官网</a>自行注册就行.</p>
-<h3 id="3、生成SSH公钥"><a href="#3、生成SSH公钥" class="headerlink" title="3、生成SSH公钥"></a>3、<a href="https://help.github.com/articles/generating-an-ssh-key/" target="_blank" rel="external">生成SSH公钥</a></h3><p>这玩意还是很简单的,略.</p>
-<h3 id="4、pages服务方式部署"><a href="#4、pages服务方式部署" class="headerlink" title="4、pages服务方式部署"></a>4、pages服务方式部署</h3><p>直接上图:<br><img src="/uploads/CodingPages服务配置.jpg" alt="CodingPages服务配置"></p>
-<h3 id="5、域名DNS解析配置"><a href="#5、域名DNS解析配置" class="headerlink" title="5、域名DNS解析配置"></a>5、域名DNS解析配置</h3><p>直接上图:<br><img src="/uploads/域名DNS解析配置.jpg" alt="域名DNS解析配置"></p>
-]]></content>
+
       
-        
-        <tags>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-            <tag> hexo </tag>
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-            <tag> github </tag>
+              <a href="/2017/04/26/nextjs-lesson2-0/" rel="prev" title="nextjs-lesson2-0">
+                nextjs-lesson2-0 <i class="fa fa-chevron-right"></i>
+              </a>
             
-            <tag> coding </tag>
-            
-        </tags>
-        
-    </entry>
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
     
+      <div class="ds-thread" data-thread-key="2017/07/25/搭建SSM工程过程/"
+           data-title="" data-url="http://wyh2020.com/2017/07/25/搭建SSM工程过程/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.jpg"
+               alt="wyh" />
+          <p class="site-author-name" itemprop="name">wyh</p>
+          <p class="site-description motion-element" itemprop="description">糟糕的世界,你好!</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-block">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友情链接
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://easy136.com/" title="凌尘微志" target="_blank">凌尘微志</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建SSM工程"><span class="nav-number">1.</span> <span class="nav-text">搭建SSM工程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用IntelliJ-IDEA创建spring-maven-SpringMVC-MyBatis项目"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">使用IntelliJ IDEA创建spring + maven + SpringMVC + MyBatis项目</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1、创建maven项目"><span class="nav-number">1.1.</span> <span class="nav-text">1、创建maven项目</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#【1-1】-File-gt-New-Module，进入创建项目窗口。"><span class="nav-number">1.1.1.</span> <span class="nav-text">【1.1】 File -> New Module，进入创建项目窗口。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【1-2】-点击Next，填写GroupId、ArtifactId和Version"><span class="nav-number">1.1.2.</span> <span class="nav-text">【1.2】 点击Next，填写GroupId、ArtifactId和Version</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【1-3】-接着下一步，这里需要注在Properties中添加一个参数-archetypeCatalog-internal，不加这个参数，在maven生成骨架的时候将会非常慢，有时候直接卡住。来自网上的解释："><span class="nav-number">1.1.3.</span> <span class="nav-text">【1.3】 接着下一步，这里需要注在Properties中添加一个参数 archetypeCatalog=internal，不加这个参数，在maven生成骨架的时候将会非常慢，有时候直接卡住。来自网上的解释：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【1-4】-填写Module-name"><span class="nav-number">1.1.4.</span> <span class="nav-text">【1.4】 填写Module name</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【1-5】-生成maven的项目骨架之后，我们还需要手动在-src-main-下创建-java目录。现在可以直接编写了，我把项目所需要的文件都编写完成之后，项目的工程结构如图。"><span class="nav-number">1.1.5.</span> <span class="nav-text">【1.5】 生成maven的项目骨架之后，我们还需要手动在 src/main 下创建 java目录。现在可以直接编写了，我把项目所需要的文件都编写完成之后，项目的工程结构如图。</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#到此为止，项目的框架基本搭建完成，下面重点说一下项目的配置文件"><span class="nav-number">1.1.5.1.</span> <span class="nav-text">到此为止，项目的框架基本搭建完成，下面重点说一下项目的配置文件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、项目配置文件"><span class="nav-number">1.2.</span> <span class="nav-text">2、项目配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#【2-1】-pom-xml"><span class="nav-number">1.2.1.</span> <span class="nav-text">【2.1】 pom.xml</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#这里使用maven来引入项目所需要的jar包，所以也就不需要手动来管理jar包了。"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">这里使用maven来引入项目所需要的jar包，所以也就不需要手动来管理jar包了。</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【2-2】-jdbc-properties"><span class="nav-number">1.2.2.</span> <span class="nav-text">【2.2】 jdbc.properties</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【2-3】-log4j-properties"><span class="nav-number">1.2.3.</span> <span class="nav-text">【2.3】 log4j.properties</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【2-4】-spring-mvc-xml"><span class="nav-number">1.2.4.</span> <span class="nav-text">【2.4】 spring-mvc.xml</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【2-5】-spring-mybatis-xml"><span class="nav-number">1.2.5.</span> <span class="nav-text">【2.5】 spring-mybatis.xml</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【2-6】web-xml"><span class="nav-number">1.2.6.</span> <span class="nav-text">【2.6】web.xml</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、-项目配置和部署"><span class="nav-number">1.3.</span> <span class="nav-text">3、 项目配置和部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#【3-1】-File-gt-Project-Structure，进入创建项目配置窗口。"><span class="nav-number">1.3.1.</span> <span class="nav-text">【3.1】 File -> Project Structure，进入创建项目配置窗口。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【3-2】创建一个Tomcat容器实例，并把项目部署进去"><span class="nav-number">1.3.2.</span> <span class="nav-text">【3.2】创建一个Tomcat容器实例，并把项目部署进去</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【3-2】创建一个Tomcat容器实例，并把项目部署进去-1"><span class="nav-number">1.3.3.</span> <span class="nav-text">【3.2】创建一个Tomcat容器实例，并把项目部署进去</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【3-3】项目所需配置好项目访问的根路径，然后启动Tomcat。"><span class="nav-number">1.3.4.</span> <span class="nav-text">【3.3】项目所需配置好项目访问的根路径，然后启动Tomcat。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#【3-4】-在浏览器地址栏中输入：http-localhost-8080-test-queryList"><span class="nav-number">1.3.5.</span> <span class="nav-text">【3.4】  在浏览器地址栏中输入：http://localhost:8080/test/queryList</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#项目所需看到图中显示效果，则表示项目搭建成功。"><span class="nav-number">1.3.5.1.</span> <span class="nav-text">项目所需看到图中显示效果，则表示项目搭建成功。</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wyh</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user">本站访客数</i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span>人/次</span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye">本站总访问量</i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span>次</span>
   
   
-</search>
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"wyh2020"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+
+</body>
+</html>

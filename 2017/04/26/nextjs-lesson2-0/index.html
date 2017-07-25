@@ -84,17 +84,17 @@
 
 
 
-<meta name="description" content="原文地址 页面导航Now we know how to create a simple Next.js app and run it. Our simple app only had a single page, but we can add as many pages as we want. For example, we can create an “About” page by adding">
+<meta name="description" content="原文地址 页面导航现在我们知道如何创建一个简单的Next.js应用程序并运行它。虽然我们简单的应用程序只有一个页面，但我们想添加多少页面都可以。例如，我们可以创建一个“关于”页面，’pages/about.js’代码如下： 12345export default () =&amp;gt; (  &amp;lt;div&amp;gt;    &amp;lt;p&amp;gt;This is the about page&amp;lt;/p&amp;gt;">
 <meta name="keywords">
 <meta property="og:type" content="article">
 <meta property="og:title" content="nextjs-lesson2-0">
 <meta property="og:url" content="http://wyh2020.com/2017/04/26/nextjs-lesson2-0/index.html">
 <meta property="og:site_name" content="Wyh's Blog">
-<meta property="og:description" content="原文地址 页面导航Now we know how to create a simple Next.js app and run it. Our simple app only had a single page, but we can add as many pages as we want. For example, we can create an “About” page by adding">
-<meta property="og:updated_time" content="2017-04-27T01:07:41.000Z">
+<meta property="og:description" content="原文地址 页面导航现在我们知道如何创建一个简单的Next.js应用程序并运行它。虽然我们简单的应用程序只有一个页面，但我们想添加多少页面都可以。例如，我们可以创建一个“关于”页面，’pages/about.js’代码如下： 12345export default () =&amp;gt; (  &amp;lt;div&amp;gt;    &amp;lt;p&amp;gt;This is the about page&amp;lt;/p&amp;gt;">
+<meta property="og:updated_time" content="2017-05-03T06:29:46.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="nextjs-lesson2-0">
-<meta name="twitter:description" content="原文地址 页面导航Now we know how to create a simple Next.js app and run it. Our simple app only had a single page, but we can add as many pages as we want. For example, we can create an “About” page by adding">
+<meta name="twitter:description" content="原文地址 页面导航现在我们知道如何创建一个简单的Next.js应用程序并运行它。虽然我们简单的应用程序只有一个页面，但我们想添加多少页面都可以。例如，我们可以创建一个“关于”页面，’pages/about.js’代码如下： 12345export default () =&amp;gt; (  &amp;lt;div&amp;gt;    &amp;lt;p&amp;gt;This is the about page&amp;lt;/p&amp;gt;">
 
 
 
@@ -313,11 +313,34 @@
 
       
         <p><a href="https://learnnextjs.com/basics/navigate-between-pages" target="_blank" rel="external">原文地址</a></p>
-<h3 id="页面导航"><a href="#页面导航" class="headerlink" title="页面导航"></a>页面导航</h3><p>Now we know how to create a simple Next.js app and run it. Our simple app only had a single page, but we can add as many pages as we want. For example, we can create an “About” page by adding the following content to pages/about.js:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">export default () =&gt; (</div><div class="line">  &lt;div&gt;</div><div class="line">    &lt;p&gt;This is the about page&lt;/p&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">)</div></pre></td></tr></table></figure></p>
-<p>Then we can access that page with <a href="http://localhost:3000/about" target="_blank" rel="external">http://localhost:3000/about</a>.</p>
-<p>After that, we need to connect these pages. We could use an HTML “a” tag for that. However, it won’t perform client-side navigation; it navigates to the page via the server, which is not what we want.</p>
-<p>In order to support client-side navigation, we need to use Next.js’s Link API, which is exported via next/link.</p>
-<p>Let’s see how to use it.</p>
+<h3 id="页面导航"><a href="#页面导航" class="headerlink" title="页面导航"></a>页面导航</h3><p>现在我们知道如何创建一个简单的Next.js应用程序并运行它。虽然我们简单的应用程序只有一个页面，但我们想添加多少页面都可以。例如，我们可以创建一个“关于”页面，’pages/about.js’代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">export default () =&gt; (</div><div class="line">  &lt;div&gt;</div><div class="line">    &lt;p&gt;This is the about page&lt;/p&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">)</div></pre></td></tr></table></figure>
+<p>然后我们可以访问 <a href="http://localhost:3000/about" target="_blank" rel="external">http://localhost:3000/about</a></p>
+<p>在那之后，我们需要将这些页面关联起来。我们可以使用HTML“A”标签。但是，它执行的不是客户端导航，而是服务器端导航，这不是我们想要的。</p>
+<p>为了支持客户端导航，我们需要使用next/link里的Link组件的API。</p>
+<p>让我们来看看如何使用它。</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>为了跟随这一课，你需要有一个简单的next.js APP。为此，下载以下示例应用程序：<br>为了学习这个课程，我们准备了一个简单的Next.js应用。请下载示例应用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/arunoda/learnnextjs-demo.git</div><div class="line">cd learnnextjs-demo</div><div class="line">git checkout getting-started</div></pre></td></tr></table></figure>
+<p>执行以下命令:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install</div><div class="line">npm run dev</div></pre></td></tr></table></figure>
+<p>现在可以通过导航<a href="http://localhost:3000/" target="_blank" rel="external">http://localhost:3000/</a> 来访问应用。</p>
+<h4 id="Link的使用"><a href="#Link的使用" class="headerlink" title="Link的使用"></a>Link的使用</h4><p>现在我们要在两个页面间使用 ‘next/link’。</p>
+<p>在’pages/index.js’添加如下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">// This is the Link API</div><div class="line">import Link from &apos;next/link&apos;</div><div class="line"></div><div class="line">const Index = () =&gt; (</div><div class="line">  &lt;div&gt;</div><div class="line">    &lt;Link href=&quot;/about&quot;&gt;</div><div class="line">      &lt;a&gt;About Page&lt;/a&gt;</div><div class="line">    &lt;/Link&gt;</div><div class="line">    &lt;p&gt;Hello Next.js&lt;/p&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">)</div><div class="line"></div><div class="line">export default Index</div></pre></td></tr></table></figure>
+<p>在这里我们已经导入’next/link’ 并命名为 Link，使用方法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;Link href=&quot;/about&quot;&gt;</div><div class="line">  &lt;a&gt;About Page&lt;/a&gt;</div><div class="line">&lt;/Link&gt;</div></pre></td></tr></table></figure>
+<p>现在尝试访问 <a href="http://localhost:3000/" target="_blank" rel="external">http://localhost:3000/</a></p>
+<p>然后点击 “About Page” 链接。它会导航到”About”页面。</p>
+<p>这是客户端导航；这个动作发生在浏览器，并不会向服务器发请求。<br>你可以通过打开浏览器的网络请求检查来验证这一点。<br>现在我们来做一个简单的任务：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">访问 http://localhost:3000/</div><div class="line">然后点击&quot;About Page&quot;</div><div class="line">然后点击浏览器后退按钮</div></pre></td></tr></table></figure></p>
+<p>点击后退按钮后下面描述那个最准确？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">✦后退按钮没反应。</div><div class="line">✦在浏览器控制台抛出错误</div><div class="line">✓在客户端导航到主页面</div><div class="line">✦弹出警告&quot;import &apos;next/back&apos; to support back button&quot;</div></pre></td></tr></table></figure>
+<h4 id="支持客户端历史"><a href="#支持客户端历史" class="headerlink" title="支持客户端历史"></a>支持客户端历史</h4><p>当点击后退按钮，页面只在客户端导航到了首页；next/link帮您处理所有的location.history。<br>您甚至不需要编写一行客户端路由代码。<br>只需简单的链接页面。</p>
+<h4 id="Link样式"><a href="#Link样式" class="headerlink" title="Link样式"></a>Link样式</h4><p>大多数时候，我们可能想要设计我们的链接。我们可以这样做：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;Link href=&quot;/about&quot;&gt;</div><div class="line">  &lt;a style=&#123;&#123; fontSize: 20 &#125;&#125;&gt;About Page&lt;/a&gt;</div><div class="line">&lt;/Link&gt;</div></pre></td></tr></table></figure></p>
+<p>一旦我们添加这个，你可以看到正确应用的样式。<br>改成这样怎么样？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;Link href=&quot;/about&quot; style=&#123;&#123; fontSize: 20 &#125;&#125;&gt;</div><div class="line">  &lt;a&gt;About Page&lt;/a&gt;</div><div class="line">&lt;/Link&gt;</div></pre></td></tr></table></figure>
+<p>上面的代码发生了什么变化？</p>
+<p>✦正如预期的一样样式生效。<br>✓链接的样式没有生效。<br>✦页面重载后样式生效。<br>✦样式生效，但在控制台的警告。</p>
+<h4 id="Link只是一个高阶组件（HOC）"><a href="#Link只是一个高阶组件（HOC）" class="headerlink" title="Link只是一个高阶组件（HOC）"></a>Link只是一个高阶组件（HOC）</h4><p>其实，在next/link的样式没有效果。那是因为next/link是一个高阶组件，只有接受“href”和一些类似的属性。如果需要加样式，则需要对基础组件进行操作。<br>这就是我们说的Link。</p>
 
       
     </div>
@@ -342,6 +365,10 @@
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/07/25/搭建SSM工程过程/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
             
           </div>
 
@@ -447,7 +474,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -500,7 +527,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#页面导航"><span class="nav-number">1.</span> <span class="nav-text">页面导航</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#页面导航"><span class="nav-number">1.</span> <span class="nav-text">页面导航</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Link的使用"><span class="nav-number">1.2.</span> <span class="nav-text">Link的使用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#支持客户端历史"><span class="nav-number">1.3.</span> <span class="nav-text">支持客户端历史</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Link样式"><span class="nav-number">1.4.</span> <span class="nav-text">Link样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Link只是一个高阶组件（HOC）"><span class="nav-number">1.5.</span> <span class="nav-text">Link只是一个高阶组件（HOC）</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
